@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BigImgViewController" customModule="EyeTrackTest" customModuleProvider="target">
+            <connections>
+                <outlet property="BigImg" destination="eJs-WA-spc" id="ert-kF-8dR"/>
+                <outlet property="backBtn" destination="Z3x-RE-Z4p" id="PCF-nK-xcg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eJs-WA-spc">
+                    <rect key="frame" x="0.0" y="198" width="414" height="500"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="500" id="tvO-ce-aeu"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3x-RE-Z4p">
+                    <rect key="frame" x="132" y="802" width="150" height="40"/>
+                    <color key="backgroundColor" red="0.1092322692" green="0.83622866870000001" blue="0.60666304829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="G4d-3t-s5k"/>
+                        <constraint firstAttribute="width" constant="150" id="H3N-qF-iSr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="khq-t4-aJ8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Z3x-RE-Z4p" secondAttribute="bottom" constant="20" id="MGX-xi-2Qe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eJs-WA-spc" secondAttribute="trailing" id="Shm-2E-V2b"/>
+                <constraint firstItem="eJs-WA-spc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XlI-hz-HbQ"/>
+                <constraint firstItem="Z3x-RE-Z4p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c4n-QU-aIm"/>
+                <constraint firstItem="eJs-WA-spc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cnn-mK-PYT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+    </objects>
+</document>
