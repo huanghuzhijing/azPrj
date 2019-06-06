@@ -95,6 +95,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aG1-Kl-Jdi">
+                                <rect key="frame" x="1" y="-55" width="414" height="897"/>
+                            </arscnView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="校准距离" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6W-27-vDo">
                                 <rect key="frame" x="172" y="150" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -114,9 +117,8 @@
                                     <constraint firstAttribute="width" constant="80" id="WxE-eC-KNx"/>
                                     <constraint firstAttribute="height" constant="80" id="u6t-dK-ohh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
-                                <state key="normal" title="+">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.1092322692" green="0.83622866870000001" blue="0.60666304829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -128,20 +130,25 @@
                         <constraints>
                             <constraint firstItem="TsW-S3-aF1" firstAttribute="centerX" secondItem="fTr-HV-HmN" secondAttribute="centerX" id="0ec-bH-qoc"/>
                             <constraint firstItem="N6W-27-vDo" firstAttribute="centerX" secondItem="fTr-HV-HmN" secondAttribute="centerX" id="15U-Pb-Ni3"/>
+                            <constraint firstItem="aG1-Kl-Jdi" firstAttribute="leading" secondItem="Xnz-Zq-6cS" secondAttribute="leading" id="VT9-JU-3gA"/>
+                            <constraint firstItem="Xnz-Zq-6cS" firstAttribute="trailing" secondItem="aG1-Kl-Jdi" secondAttribute="trailing" id="a4h-Le-vQW"/>
                             <constraint firstItem="EvP-7B-99d" firstAttribute="centerY" secondItem="fTr-HV-HmN" secondAttribute="centerY" id="bi6-fm-iRp"/>
+                            <constraint firstAttribute="bottom" secondItem="aG1-Kl-Jdi" secondAttribute="bottom" id="cP1-zP-zR3"/>
                             <constraint firstItem="EvP-7B-99d" firstAttribute="centerX" secondItem="fTr-HV-HmN" secondAttribute="centerX" id="g8c-5o-TDU"/>
+                            <constraint firstItem="aG1-Kl-Jdi" firstAttribute="top" secondItem="fTr-HV-HmN" secondAttribute="top" constant="-55" id="nK4-cB-4NY"/>
                             <constraint firstItem="TsW-S3-aF1" firstAttribute="top" secondItem="N6W-27-vDo" secondAttribute="bottom" constant="40" id="xim-nZ-6Ia"/>
                             <constraint firstItem="N6W-27-vDo" firstAttribute="top" secondItem="Xnz-Zq-6cS" secondAttribute="top" constant="150" id="zGc-5n-E7S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xnz-Zq-6cS"/>
                     </view>
                     <connections>
+                        <outlet property="sceneView" destination="aG1-Kl-Jdi" id="WoD-TE-0Ue"/>
                         <outlet property="trackButton" destination="EvP-7B-99d" id="vO8-6v-NfB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIe-42-OgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="136"/>
+            <point key="canvasLocation" x="831.88405797101461" y="135.9375"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="pOh-4M-VUq">

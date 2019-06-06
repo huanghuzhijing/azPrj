@@ -20,6 +20,9 @@
 		00374D5722A7C4FF0051CBCB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00374D5622A7C4FF0051CBCB /* DetailViewController.swift */; };
 		00374D5A22A7CBE70051CBCB /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00374D5822A7CBE70051CBCB /* DetailTableViewCell.swift */; };
 		00374D5B22A7CBE70051CBCB /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00374D5922A7CBE70051CBCB /* DetailTableViewCell.xib */; };
+		0051BF4022A9121E00FCCDBA /* EyeLasers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051BF3E22A9121D00FCCDBA /* EyeLasers.swift */; };
+		0051BF4122A9121E00FCCDBA /* RaycastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051BF3F22A9121D00FCCDBA /* RaycastData.swift */; };
+		0051BF4322A9122800FCCDBA /* HeatMap.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0051BF4222A9122800FCCDBA /* HeatMap.metal */; };
 		00A201CE22A7ED9900423874 /* BigImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A201CC22A7ED9900423874 /* BigImgViewController.swift */; };
 		00A201CF22A7ED9900423874 /* BigImgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A201CD22A7ED9900423874 /* BigImgViewController.xib */; };
 		B7C4DFEEC349B9F4F2D899E6 /* Pods_EyeTrackTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37343F147A5CB8E6C3B2F65C /* Pods_EyeTrackTest.framework */; };
@@ -62,6 +65,9 @@
 		00374D5622A7C4FF0051CBCB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		00374D5822A7CBE70051CBCB /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		00374D5922A7CBE70051CBCB /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		0051BF3E22A9121D00FCCDBA /* EyeLasers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeLasers.swift; sourceTree = "<group>"; };
+		0051BF3F22A9121D00FCCDBA /* RaycastData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaycastData.swift; sourceTree = "<group>"; };
+		0051BF4222A9122800FCCDBA /* HeatMap.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = HeatMap.metal; sourceTree = "<group>"; };
 		00A201CC22A7ED9900423874 /* BigImgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImgViewController.swift; sourceTree = "<group>"; };
 		00A201CD22A7ED9900423874 /* BigImgViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigImgViewController.xib; sourceTree = "<group>"; };
 		2087FADA85C973008DF7417E /* Pods-EyeTrackTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeTrackTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyeTrackTest/Pods-EyeTrackTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 				00374D5922A7CBE70051CBCB /* DetailTableViewCell.xib */,
 				00A201CC22A7ED9900423874 /* BigImgViewController.swift */,
 				00A201CD22A7ED9900423874 /* BigImgViewController.xib */,
+				0051BF3E22A9121D00FCCDBA /* EyeLasers.swift */,
+				0051BF3F22A9121D00FCCDBA /* RaycastData.swift */,
+				0051BF4222A9122800FCCDBA /* HeatMap.metal */,
 			);
 			path = EyeTrackTest;
 			sourceTree = "<group>";
@@ -381,9 +390,12 @@
 			files = (
 				00374D2622A7A51D0051CBCB /* ViewController.swift in Sources */,
 				00374D2222A7A51D0051CBCB /* AppDelegate.swift in Sources */,
+				0051BF4322A9122800FCCDBA /* HeatMap.metal in Sources */,
 				00374D5A22A7CBE70051CBCB /* DetailTableViewCell.swift in Sources */,
+				0051BF4122A9121E00FCCDBA /* RaycastData.swift in Sources */,
 				00A201CE22A7ED9900423874 /* BigImgViewController.swift in Sources */,
 				00374D5222A7AF190051CBCB /* EyeTrackViewController.swift in Sources */,
+				0051BF4022A9121E00FCCDBA /* EyeLasers.swift in Sources */,
 				00374D5722A7C4FF0051CBCB /* DetailViewController.swift in Sources */,
 				00374D2422A7A51D0051CBCB /* SceneDelegate.swift in Sources */,
 				00374D5422A7BF9B0051CBCB /* Tools.swift in Sources */,
@@ -563,7 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32V5Q9NKYZ;
 				INFOPLIST_FILE = EyeTrackTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,7 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32V5Q9NKYZ;
 				INFOPLIST_FILE = EyeTrackTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
